@@ -1,0 +1,446 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "O que significa HTML?",
+      "answers": [
+        {
+          "text": "HyperText Markup Language",
+          "isCorrect": true
+        },
+        {
+          "text": "HighText Machine Language",
+          "isCorrect": false
+        },
+        {
+          "text": "HyperText and links Markup Language",
+          "isCorrect": false
+        },
+        {
+          "text": "Hyper Tool Markup Language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qual é a principal função do CSS?",
+      "answers": [
+        {
+          "text": "Adicionar comportamento dinâmico às páginas",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir a estrutura das páginas web",
+          "isCorrect": false
+        },
+        {
+          "text": "Estilizar e definir a aparência das páginas web",
+          "isCorrect": true
+        },
+        {
+          "text": "Realizar operações de banco de dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual é o propósito do JavaScript?",
+      "answers": [
+        {
+          "text": "Estilizar páginas web",
+          "isCorrect": false
+        },
+        {
+          "text": "Adicionar interatividade às páginas web",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar layouts para páginas web",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerenciar servidores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual comando é usado para imprimir algo no console em JavaScript?",
+      "answers": [
+        {
+          "text": "echo",
+          "isCorrect": false
+        },
+        {
+          "text": "console.print()",
+          "isCorrect": false
+        },
+        {
+          "text": "console.log()",
+          "isCorrect": true
+        },
+        {
+          "text": "print()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Qual linguagem é usada principalmente para manipulação de dados no lado do servidor?",
+      "answers": [
+        {
+          "text": "HTML",
+          "isCorrect": false
+        },
+        {
+          "text": "JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "CSS",
+          "isCorrect": false
+        },
+        {
+          "text": "PHP",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "O que é uma variável?",
+      "answers": [
+        {
+          "text": "Um tipo de dado",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma coleção de elementos",
+          "isCorrect": false
+        },
+        {
+          "text": "Um local de armazenamento para dados",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma função predefinida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Qual símbolo é usado para comentários de uma única linha em Python?",
+      "answers": [
+        {
+          "text": "//",
+          "isCorrect": false
+        },
+        {
+          "text": "#",
+          "isCorrect": true
+        },
+        {
+          "text": "/*",
+          "isCorrect": false
+        },
+        {
+          "text": "<!--",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qual método é usado para adicionar um elemento ao final de uma lista em Python?",
+      "answers": [
+        {
+          "text": "append()",
+          "isCorrect": true
+        },
+        {
+          "text": "add()",
+          "isCorrect": false
+        },
+        {
+          "text": "insert()",
+          "isCorrect": false
+        },
+        {
+          "text": "push()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Qual das seguintes opções é um loop de repetição em JavaScript?",
+      "answers": [
+        {
+          "text": "for",
+          "isCorrect": true
+        },
+        {
+          "text": "if",
+          "isCorrect": false
+        },
+        {
+          "text": "switch",
+          "isCorrect": false
+        },
+        {
+          "text": "try",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "O que é um objeto em programação orientada a objetos?",
+      "answers": [
+        {
+          "text": "Uma função especial",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma variável global",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma instância de uma classe",
+          "isCorrect": true
+        },
+        {
+          "text": "Um método privado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Qual é o operador lógico para E em JavaScript?",
+      "answers": [
+        {
+          "text": "&&",
+          "isCorrect": true
+        },
+        {
+          "text": "||",
+          "isCorrect": false
+        },
+        {
+          "text": "==",
+          "isCorrect": false
+        },
+        {
+          "text": "=",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Qual é a extensão de arquivos de código Java?",
+      "answers": [
+        {
+          "text": ".js",
+          "isCorrect": false
+        },
+        {
+          "text": ".java",
+          "isCorrect": true
+        },
+        {
+          "text": ".py",
+          "isCorrect": false
+        },
+        {
+          "text": ".jav",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "O que significa SQL?",
+      "answers": [
+        {
+          "text": "Structured Query Language",
+          "isCorrect": true
+        },
+        {
+          "text": "Simple Query Language",
+          "isCorrect": false
+        },
+        {
+          "text": "Sequential Query Language",
+          "isCorrect": false
+        },
+        {
+          "text": "System Query Language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Qual é a função do comando 'git commit'?",
+      "answers": [
+        {
+          "text": "Adicionar arquivos ao repositório",
+          "isCorrect": false
+        },
+        {
+          "text": "Salvar mudanças no repositório local",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviar arquivos para o repositório remoto",
+          "isCorrect": false
+        },
+        {
+          "text": "Atualizar o repositório local com mudanças do repositório remoto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Qual é a sintaxe correta para criar uma função em Python?",
+      "answers": [
+        {
+          "text": "def functionName():",
+          "isCorrect": true
+        },
+        {
+          "text": "function functionName()",
+          "isCorrect": false
+        },
+        {
+          "text": "func functionName()",
+          "isCorrect": false
+        },
+        {
+          "text": "create function functionName()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "O que é JSON?",
+      "answers": [
+        {
+          "text": "Um formato de dados para troca de informações",
+          "isCorrect": true
+        },
+        {
+          "text": "Um tipo de banco de dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma biblioteca JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "Um protocolo de comunicação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Qual é a saída de: console.log(typeof NaN); em JavaScript?",
+      "answers": [
+        {
+          "text": "'number'",
+          "isCorrect": true
+        },
+        {
+          "text": "'NaN'",
+          "isCorrect": false
+        },
+        {
+          "text": "'undefined'",
+          "isCorrect": false
+        },
+        {
+          "text": "'object'",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Qual método pode ser usado para unir dois arrays em JavaScript?",
+      "answers": [
+        {
+          "text": "concat()",
+          "isCorrect": true
+        },
+        {
+          "text": "merge()",
+          "isCorrect": false
+        },
+        {
+          "text": "combine()",
+          "isCorrect": false
+        },
+        {
+          "text": "attach()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Qual a saída de: 3 + 2 + '7' em JavaScript?",
+      "answers": [
+        {
+          "text": "'57'",
+          "isCorrect": true
+        },
+        {
+          "text": "'327'",
+          "isCorrect": false
+        },
+        {
+          "text": "'12'",
+          "isCorrect": false
+        },
+        {
+          "text": "12",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Qual a função principal do framework Angular?",
+      "answers": [
+        {
+          "text": "Criar estilos para aplicações web",
+          "isCorrect": false
+        },
+        {
+          "text": "Construir interfaces de usuário dinâmicas",
+          "isCorrect": true
+        },
+        {
+          "text": "Gerenciar banco de dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Realizar testes automatizados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
+
+  
