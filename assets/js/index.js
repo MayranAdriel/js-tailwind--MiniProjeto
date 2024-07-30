@@ -10,6 +10,10 @@ var resultado = document.getElementById("resultado");
 var proximaPergunta = document.getElementById("proximaPergunta");
 var bloqueado = false;
 var dataJson;
+var container = document.getElementById("container");
+var container2 = document.getElementById("container2");
+var acertos = 0;
+var textoAcertos = document.getElementById("numero-acertos");
 
 proximaPergunta.addEventListener("click", () => {
   index++;
@@ -21,39 +25,51 @@ proximaPergunta.addEventListener("click", () => {
   carregarRespostas();
 });
 
-resposta1.addEventListener("click", () => {
-  if (!bloqueado) {
+function atribuiValorDeAcertos() {
+  textoAcertos.textContent = `{acertos} de 5`;
+}
+
+function verificaSeTerminou() {
+  console.log(index);
+  if (index + 1 === 5) {
+    container.style.display = "none";
+    container2.style.display = "block";
+    textoAcertos.textContent = `${acertos} de 5`;
+  } else {
     carregarPergunta();
     carregarRespostas();
+  }
+}
+
+resposta1.addEventListener("click", () => {
+  if (!bloqueado) {
     bloqueado = true;
     verificaAcertou(dataJson[index].answers[0].isCorrect);
+    verificaSeTerminou();
   }
 });
 
 resposta2.addEventListener("click", () => {
   if (!bloqueado) {
-    carregarPergunta();
-    carregarRespostas();
     bloqueado = true;
     verificaAcertou(dataJson[index].answers[1].isCorrect);
+    verificaSeTerminou();
   }
 });
 
 resposta3.addEventListener("click", () => {
   if (!bloqueado) {
-    carregarPergunta();
-    carregarRespostas();
     bloqueado = true;
     verificaAcertou(dataJson[index].answers[2].isCorrect);
+    verificaSeTerminou();
   }
 });
 
 resposta4.addEventListener("click", () => {
   if (!bloqueado) {
-    carregarPergunta();
-    carregarRespostas();
     bloqueado = true;
     verificaAcertou(dataJson[index].answers[3].isCorrect);
+    verificaSeTerminou();
   }
 });
 
@@ -63,6 +79,7 @@ function verificaAcertou(parametroJson, numeroResposta) {
   if (parametroJson) {
     resultado.textContent = "VOCÊ ACERTOU !";
     resultado.style.color = "green";
+    acertos++;
   } else {
     resultado.textContent = "VOCÊ ERROU !";
     resultado.style.color = "red";
@@ -70,7 +87,7 @@ function verificaAcertou(parametroJson, numeroResposta) {
 }
 
 function carregarPergunta() {
-  quantoFalta.textContent = "Pergunta " + numeroPergunta + " de 5";
+  quantoFalta.textContent = `Pergunta ${numeroPergunta} de 5`;
   textoPergunta.textContent = dataJson[index].question;
 }
 
@@ -97,5 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     dataJson = r.questions;
     carregarPergunta();
     carregarRespostas();
+    console.log("chamado");
   });
 });

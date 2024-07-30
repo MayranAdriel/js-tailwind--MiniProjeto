@@ -636,11 +636,8 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
-.ml-10 {
-  margin-left: 2.5rem;
-}
-.ml-52 {
-  margin-left: 13rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -723,12 +720,6 @@ video {
 .h-screen {
   height: 100vh;
 }
-.w-1\/3 {
-  width: 33.333333%;
-}
-.w-1\/4 {
-  width: 25%;
-}
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -738,11 +729,11 @@ video {
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
 }
+.w-full {
+  width: 100%;
+}
 .w-screen {
   width: 100vw;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .flex-shrink {
   flex-shrink: 1;
@@ -1154,16 +1145,6 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-16 {
-  gap: 4rem;
-}
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1404,17 +1385,14 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-lg {
   border-radius: 0.5rem;
 }
 .rounded-xl {
   border-radius: 0.75rem;
-}
-.rounded-2xl {
-  border-radius: 1rem;
-}
-.rounded-full {
-  border-radius: 9999px;
 }
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
@@ -1525,13 +1503,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .bg-amber-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1704,9 +1682,17 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-9xl {
   font-size: 8rem;
@@ -2063,9 +2049,16 @@ video {
   forced-color-adjust: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-#texto-principal, #resultado, #pergunta {
+* {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#texto-principal, #resultado, #pergunta, #palavra-resultado, #numero-acertos {
     font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2113,8 +2106,18 @@ video {
   }
 }
 
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
@@ -2139,6 +2142,24 @@ video {
 
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-screen {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:w-1\/3 {
+    width: 33.333333%;
   }
 }
 
