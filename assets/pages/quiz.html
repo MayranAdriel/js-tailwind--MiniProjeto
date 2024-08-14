@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../../dist/main.css" />
     <title>Quiz</title>
   </head>
-  <body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+  <body class="bg-gradient-to-r from-cyan-500 to-blue-500 overflow-x-hidden">
+  <audio id="audio-acertou" src="../audios/acertou.mp3"></audio>
+  <audio id="audio-errou" src="../audios/errou.mp3"></audio>
     <div
       class="flex flex-col justify-center items-center h-screen w-screen gap-4"
       id="container"
@@ -46,17 +48,15 @@
           <h3>Resposta 4</h3>
         </div>
       </div>
-      <div class="flex items-center justify-between w-screen">
+      <div class="flex items-center md:w-screen lg:w-1/2">
         <h3
-          class="text-white text-3xl w-full"
+          class="text-white text-3xl w-full hidden"
           id="resultado"
-          style="display: none"
         >
           VOCÊ ACERTOU !
         </h3>
         <button
-          class="bg-amber-400 p-4 rounded-full border-2"
-          style="display: none"
+          class="bg-amber-400 p-4 w-4/6 rounded-full border-2 hidden"
           id="proximaPergunta"
         >
           PRÓXIMA PERGUNTA
@@ -65,7 +65,7 @@
     </div>
     <div id="container2" class="hidden">
       <div
-        class="flex items-center justify-center flex-col w-screen h-screen text-center"
+        class="flex items-center justify-center flex-col w-screen h-screen text-center "
       >
         <h1 class="text-5xl" id="palavra-resultado">RESULTADO:</h1>
         <h2 class="text-3xl">
@@ -73,6 +73,9 @@
         </h2>
         <h3 class="mt-4">Volte mais tarde para completar outros quizes</h3>
       </div>
+    </div>
+    <div id="container3" class="flex items-center justify-center">
+      <h3 class="text-5xl hidden">Você respondeu todos os quizes. Parabéns!</h3>
     </div>
     <script type="module" src="../js/index.js"></script>
   </body>
