@@ -19,10 +19,18 @@ var acertos = 0;
 var textoAcertos = document.getElementById("numero-acertos");
 var audioAcertou = document.getElementById("audio-acertou");
 var audioErrou = document.getElementById("audio-errou");
+var botaoTwitter = document.getElementById("botao-twitter");
+
+botaoTwitter.addEventListener("click", () => urlTwitter());
+
+function urlTwitter() {
+  console.log(acertos);
+  let url = `https://x.com/intent/post?text=Eu+tive+${acertos}+acertos+no+quiz&url=https://mayranadriel.github.io/js-tailwind--MiniProjeto/`;
+  window.open(url, "_blank");
+}
 
 proximaPergunta.addEventListener("click", () => {
   index++;
-  console.log(index);
   numeroPergunta++;
   proximaPergunta.style.display = "none";
   resultado.style.display = "none";
@@ -40,13 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
   loadJSON().then((r) => {
     dataJson = r.questions;
     localStorage.clear();
-    console.log(dataJson.length);
-    if (index > dataJson.length) {
-      verificaSeHaMaisPerguntas();
-    } else {
-      carregarPergunta();
-      carregarRespostas();
-    }
+    verificaSeHaMaisPerguntas();
+    carregarPergunta();
+    carregarRespostas();
   });
 });
 
@@ -91,7 +95,6 @@ function verificaSeTerminouQuizAtual() {
     index++;
     localStorage.setItem("index", index);
     atribuirNumeroDeAcertos();
-    acertos = 0;
   } else {
     carregarPergunta();
     carregarRespostas();
@@ -101,7 +104,7 @@ function verificaSeTerminouQuizAtual() {
 function atribuirNumeroDeAcertos() {
   container.style.display = "none";
   container2.style.display = "block";
-  textoAcertos.textContent = `Você acertou ${acertos} de 5`;
+  textoAcertos.textContent = `${acertos} de 5`;
 }
 
 function verificaSeHaMaisPerguntas() {
